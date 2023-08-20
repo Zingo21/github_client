@@ -40,7 +40,7 @@ dependencies:
   url_launcher: ^6.1.12
   github: ^9.17.0
   window_to_front:
-    path: ../window_to_front
+    path: ./window_to_front
   fluttericon: ^2.0.0
 
 dev_dependencies:
