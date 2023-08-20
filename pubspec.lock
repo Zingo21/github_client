@@ -328,9 +328,11 @@ packages:
   window_to_front:
     dependency: "direct main"
     description:
-      path: "../window_to_front"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: "547347988764d01a6094fa614d2f9cb8fe5ad7f2"
+      url: "https://github.com/zingo21/window_to_front.git"
+    source: git
     version: "0.0.1"
 sdks:
   dart: ">=3.0.6 <4.0.0"
