@@ -1,5 +1,7 @@
 # github_client
 
+[![Flutter CI](https://github.com/Zingo21/github_client/actions/workflows/flutter_ci.yml/badge.svg)](https://github.com/Zingo21/github_client/actions/workflows/flutter_ci.yml)
+
 A Flutter desktop app to access your GitHub repositories.
 
 #### I also use a local plugin called [window_to_front (also available on my GitHub)](https://github.com/Zingo21/window_to_front) for making the window of an application appear after logging in via the web browser. 
