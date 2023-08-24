@@ -5,22 +5,21 @@ on:
     types:
       - closed
 
-# Normal push
+# Normal push commit
 # on: push
 
-# Push to specific branch/branches
+# Push to specifc branch/branches
 #   push:
     # branches:
     #   - main
 
 jobs:
-
   if_merged:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        echo The PR was merged
+      - run: |
+          echo The PR was merged
 
   linux:
     name: Linux build and release
