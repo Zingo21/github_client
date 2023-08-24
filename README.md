@@ -1,6 +1,6 @@
 # github_client
 
-[![Flutter CI](https://github.com/Zingo21/github_client/actions/workflows/flutter_ci.yml/badge.svg)](https://github.com/Zingo21/github_client/actions/workflows/flutter_ci.yml)
+[![Flutter Desktop Deployment](https://github.com/Zingo21/github_client/actions/workflows/flutter-desktop-deployment.yml/badge.svg)](https://github.com/Zingo21/github_client/actions/workflows/flutter-desktop-deployment.yml)
 
 A Flutter desktop app to access your GitHub repositories.
 
