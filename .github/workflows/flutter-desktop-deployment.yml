@@ -1,12 +1,13 @@
 name: Flutter Desktop Deployment
 
-on:
-  push:
-    branches:
-      - main
+on: push
+#   push:
+    # branches:
+    #   - main
 
 jobs:
   linux:
+    name: Linux build and release
     runs-on: ubuntu-latest
 
     steps:
@@ -39,6 +40,7 @@ jobs:
           files: build/linux/x64/release/bundle/github_client-${{github.ref_name}}-linux.zip
 
   windows:
+    name: Windows build and release
     runs-on: windows-latest
 
     steps:
@@ -69,6 +71,7 @@ jobs:
           files: build/windows/runner/Release/github_client-${{github.ref_name}}-windows.zip
 
   macos:
+    name: MacOS build and release
     runs-on: macos-latest
 
     steps:
