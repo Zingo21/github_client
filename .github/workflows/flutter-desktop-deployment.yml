@@ -44,7 +44,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: github_client-${{github.ref_name}}-linux.zip
+          filename: github_client-${{github.head_ref}}-linux.zip
           directory: build/linux/x64/release/bundle
       - name: Release to github
         uses: softprops/action-gh-release@v1
@@ -52,7 +52,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{github.head_ref}}
-          files: build/linux/x64/release/bundle/github_client-${{github.ref_name}}-linux.zip
+          files: build/linux/x64/release/bundle/github_client-${{github.head_ref}}-linux.zip
 
   windows:
     name: Windows build and release
@@ -75,7 +75,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: github_client-${{github.ref_name}}-windows.zip
+          filename: github_client-${{github.head_ref}}-windows.zip
           directory: build/windows/runner/Release
       - name: Release to github
         uses: softprops/action-gh-release@v1
@@ -83,7 +83,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{github.head_ref}}
-          files: build/windows/runner/Release/github_client-${{github.ref_name}}-windows.zip
+          files: build/windows/runner/Release/github_client-${{github.head_ref}}-windows.zip
 
   macos:
     name: MacOS build and release
@@ -106,7 +106,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           type: 'zip'
-          filename: github_client-${{github.ref_name}}-macos.zip
+          filename: github_client-${{github.head_ref}}-macos.zip
           directory: build/macos/Build/Products/Release
       - name: Release to github
         uses: softprops/action-gh-release@v1
@@ -114,4 +114,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{github.head_ref}}
-          files: build/macos/Build/Products/Release/github_client-${{github.ref_name}}-macos.zip
+          files: build/macos/Build/Products/Release/github_client-${{github.head_ref}}-macos.zip
